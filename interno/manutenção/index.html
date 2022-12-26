@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resgitro de Manutenção</title>
+</head>
+
+<body>
+    <main class="main">
+        <nav class="menu">
+            <img src="img/logo.png" alt="logo" id="logo">
+            <section class="menuLinks">
+                <a href="">Dashboard</a>
+                <a href="">Registrar manutenção</a>
+                <a href="">Em andamento</a>
+                <a href="">Concluidos</a>
+            </section>
+        </nav>
+        <form class="mainContent">
+            <h1 class="mainTitle strong">REGISTRO DE MANUTENÇÃO</h1>
+            <section class="secao">
+                <hr>
+                <h2>Informação do serviço</h2>
+                <div class="service">
+                    <input type="text" class="defaultInputTxt" placeholder="Quem recebeu:">
+                    <input type="number" class="defaultInputTxt" placeholder="Valor a ser recebido:">
+                    <input type="date" class="defaultInputTxt" placeholder="Data de recebimento:">
+                    <input type="date" class="defaultInputTxt" placeholder="Data de retirada:">
+                    <input type="date" class="defaultInputTxt" placeholder="Concluído em:">
+                </div>
+            </section>
+            <section class="secao">
+                <hr>
+                <h2 class="titleSection">Cliente</h2>
+                <div class="service">
+                    <input type="text" class="defaultInputTxt" placeholder="Nome do Cliente:">
+                    <input type="text" class="defaultInputTxt" placeholder="CPF/CNPJ:">
+                    <input type="tel" class="defaultInputTxt" placeholder="Celular">
+                    <input type="email" class="defaultInputTxt" placeholder="E-mail">
+                </div>
+            </section>
+            <div class="secao">
+                <hr>
+                <h2 class="titleSection">Dispositivo</h2>
+                <div class="service">
+                    <input type="text" class="defaultInputTxt" placeholder="Serail da maquina:">
+                    <input type="text" class="defaultInputTxt" placeholder="Fabricante:">
+                    <input type="text" class="defaultInputTxt" placeholder="Modelo">
+                    <input type="text" class="defaultInputTxt" placeholder="IMEI: ">
+                    <input type="text" class="defaultInputTxt" placeholder="Senha:">
+                </div>
+            </div>
+            <div class="secao">
+                <hr>
+                <h2 class="titleSection">Checagem de recebimento</h2>
+                <div class="service">
+                    <div class="checkList">
+                        <div class="itemCheckList headerCheck">
+                            <p class="strong">OK</p>
+                            <p class="strong">NOK</p>
+                            <p class="strong">COMPONENTE</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="carcaca" value="ok">
+                            <input type="radio" name="carcaca" value="nok">
+                            <p>Carcaça</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="tela" value="ok">
+                            <input type="radio" name="tela" value="nok">
+                            <p>Tela</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="teclado" value="ok">
+                            <input type="radio" name="teclado" value="nok">
+                            <p>Teclado</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="touch" value="ok">
+                            <input type="radio" name="touch" value="nok">
+                            <p>Touchpad/Mouse</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="ports" value="ok">
+                            <input type="radio" name="ports" value="nok">
+                            <p>Portas de entrada</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="parafusos" value="ok">
+                            <input type="radio" name="parafusos" value="nok">
+                            <p>Parafusos</p>
+                        </div>
+                        <div class="itemCheckList">
+                            <input type="radio" name="fonte" value="ok">
+                            <input type="radio" name="fonte" value="nok">
+                            <p>Fonte</p>
+                        </div>
+                    </div>
+                    <div class="aboutReceive headerCheck">
+                        <input type="text" class="defaultInputTxt" placeholder="Carcaça:" name="carcacaobs">
+                        <input type="text" class="defaultInputTxt" placeholder="Tela:" name="telaobs">
+                        <input type="text" class="defaultInputTxt" placeholder="Teclado:" name="Tecladoobs">
+                        <input type="text" class="defaultInputTxt" placeholder="Touchpad/Mouse:" name="touchobs">
+                        <input type="text" class="defaultInputTxt" placeholder="Portas de entrada:" name="portasobs">
+                        <input type="text" class="defaultInputTxt" placeholder="Parafusos:" name="parafusosobs">
+                        <input type="text" class="defaultInputTxt" placeholder="Fonte:" name="fonteobs">
+                    </div>
+                    <div class="obsgeneral">
+                        <input type="text" placeholder="Observações adicionais:">
+                    </div>
+                </div>
+            </div>
+            <div class="secao">
+                <hr>
+                <div class="aboutGeneral">
+                    <h2 class="titleSection">Checagem de recebimento</h2>
+                    <div class="service multipleServiceSection">
+                        <input type="text" placeholder="Descrição do serviço a ser realizado:">
+                    </div>
+                    <h2>Checagem de recebimento</h2>
+                    <div class="service multipleServiceSection">
+                        <input type="text" placeholder="Descrição do serviço a ser realizado:">
+                    </div>
+                </div>
+                <div class="componentUsed">
+                    <div class="component">
+                        <input type="text" class="defaultInputTxt" placeholder="Peça">
+                        <input type="text" class="defaultInputTxt" placeholder="Valor">
+                        <button class="removeComponent"> - </button>
+                    </div>
+                    <button class="addComponent">+</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

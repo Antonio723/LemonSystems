@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .main {
+            height: 100vh;
+            font-family: 'Manrope', sans-serif, 'Montserrat';
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .main>img{
+            max-height: 500px;
+            padding: 20px;
+            background-color: #6BF250;
+            border-radius: 15px;
+        }
+
+        .covertext{
+            text-align: center;
+        }
+
+        .countdown{
+            font-weight: bolder;
+        }
+
+        @media (max-width:480px) {
+            .main{
+                flex-direction: column;
+            }
+
+            .main>img{
+                max-height: 100vh;
+            }
+
+            .convertext{
+                position: absolute;
+                color: #f0f0f0;
+            }
+        }
+    </style>
+    <title>Construindo</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="covertext">
+            <h1>ESTAMOS EM CONSTRUÇÃO</h1>
+            <H2>Irremos inaugurar nosso site em <span class="countdown">Countdown</span></H2>
+        </div>
+        <img src="img/arvore.png" alt="">
+    </section>
+</body>
+
+<script>
+    var countDate = new Date("Jan 22, 2023 12:59:59").getTime();
+
+    function countDown() {
+        var now = new Date().getTime();
+        var distance = countDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.querySelector(".countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    if (countDate > new Date().getTime()) {
+        setInterval(countDown, 1000);
+    }
+</script>
+
+</html>
