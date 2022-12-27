@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,50 +56,52 @@
             <div class="secao">
                 <hr>
                 <h2 class="titleSection">Checagem de recebimento</h2>
-                <div class="service">
+                <div class="service checkMain">
                     <div class="checkList">
                         <div class="itemCheckList headerCheck">
-                            <p class="strong">OK</p>
-                            <p class="strong">NOK</p>
+                            <div class="situation">
+                                <p class="strong">OK</p>
+                                <p class="strong">NOK</p>
+                            </div>
                             <p class="strong">COMPONENTE</p>
                         </div>
-                        <div class="itemCheckList">
-                            <input type="radio" name="carcaca" value="ok">
+                        <div class="itemCheckList ">
+                            <input type="radio" name="carcaca" value="ok" required checked>
                             <input type="radio" name="carcaca" value="nok">
                             <p>Carcaça</p>
                         </div>
                         <div class="itemCheckList">
-                            <input type="radio" name="tela" value="ok">
+                            <input type="radio" name="tela" value="ok" required checked>
                             <input type="radio" name="tela" value="nok">
                             <p>Tela</p>
                         </div>
                         <div class="itemCheckList">
-                            <input type="radio" name="teclado" value="ok">
+                            <input type="radio" name="teclado" value="ok" required checked>
                             <input type="radio" name="teclado" value="nok">
                             <p>Teclado</p>
                         </div>
                         <div class="itemCheckList">
-                            <input type="radio" name="touch" value="ok">
+                            <input type="radio" name="touch" value="ok" required checked>
                             <input type="radio" name="touch" value="nok">
                             <p>Touchpad/Mouse</p>
                         </div>
                         <div class="itemCheckList">
-                            <input type="radio" name="ports" value="ok">
+                            <input type="radio" name="ports" value="ok" required checked>
                             <input type="radio" name="ports" value="nok">
                             <p>Portas de entrada</p>
                         </div>
                         <div class="itemCheckList">
-                            <input type="radio" name="parafusos" value="ok">
+                            <input type="radio" name="parafusos" value="ok" required checked>
                             <input type="radio" name="parafusos" value="nok">
                             <p>Parafusos</p>
                         </div>
                         <div class="itemCheckList">
-                            <input type="radio" name="fonte" value="ok">
+                            <input type="radio" name="fonte" value="ok" required checked>
                             <input type="radio" name="fonte" value="nok">
                             <p>Fonte</p>
                         </div>
                     </div>
-                    <div class="aboutReceive headerCheck">
+                    <div class="aboutReceive">
                         <input type="text" class="defaultInputTxt" placeholder="Carcaça:" name="carcacaobs">
                         <input type="text" class="defaultInputTxt" placeholder="Tela:" name="telaobs">
                         <input type="text" class="defaultInputTxt" placeholder="Teclado:" name="Tecladoobs">
@@ -110,7 +111,7 @@
                         <input type="text" class="defaultInputTxt" placeholder="Fonte:" name="fonteobs">
                     </div>
                     <div class="obsgeneral">
-                        <input type="text" placeholder="Observações adicionais:">
+                        <input type="text" placeholder="Observações adicionais:" class="inputObsGeneric">
                     </div>
                 </div>
             </div>
@@ -119,16 +120,16 @@
                 <div class="aboutGeneral">
                     <h2 class="titleSection">Checagem de recebimento</h2>
                     <div class="service multipleServiceSection">
-                        <input type="text" placeholder="Descrição do serviço a ser realizado:">
+                        <input type="text" placeholder="Descrição do serviço a ser realizado:" class="inputObsGeneric">
                     </div>
                     <h2>Checagem de recebimento</h2>
                     <div class="service multipleServiceSection">
-                        <input type="text" placeholder="Descrição do serviço a ser realizado:">
+                        <input type="text" placeholder="Descrição de melhorias:" class="inputObsGeneric">
                     </div>
                 </div>
                 <div class="componentUsed">
                     <div class="component">
-                        <input type="text" class="defaultInputTxt" placeholder="Peça">
+                        <input type="text" class="defaultInputTxt" placeholder="Peça" >
                         <input type="text" class="defaultInputTxt" placeholder="Valor">
                         <button class="removeComponent"> - </button>
                     </div>
